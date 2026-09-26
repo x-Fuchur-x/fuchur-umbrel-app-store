@@ -1,0 +1,39 @@
+manifestVersion: 1.1
+id: fuchur-gameyfin
+storage:
+  dataRoot: data
+folderAccess:
+  - id: game-library
+    name: Game Library
+    note: Select the folder that contains your games. It is mounted read-only at /games so Gameyfin cannot modify your original files.
+    mounts:
+      - service: web
+        targetPath: /games
+        readOnly: true
+category: gaming
+name: Gameyfin
+version: "2.4.0"
+tagline: A beautiful home for your game collection
+icon: https://raw.githubusercontent.com/gameyfin/gameyfin/v2.4.0/app/src/main/frontend/favicon.svg
+port: 8909
+description: >-
+  Gameyfin is an open-source game library manager that scans folders you already own, downloads metadata and cover art, and presents your collection in a clean web interface.
+
+
+  This is an unofficial Umbrel community package. It uses the official Gameyfin container image from ghcr.io and does not include or distribute games, ROMs, BIOS files, or other copyrighted game content.
+
+
+  For a safe setup on Umbrel, select your existing game collection through Folder Access. The library is mounted read-only at /games, while Gameyfin keeps its database, images, plugin data, and logs inside its own app data directory.
+developer: Gameyfin
+website: https://gameyfin.org/
+submitter: x-Fuchur-x
+submission: https://github.com/x-Fuchur-x/fuchur-umbrel-app-store
+repo: https://github.com/gameyfin/gameyfin
+support: https://github.com/x-Fuchur-x/fuchur-umbrel-app-store/issues
+gallery: []
+releaseNotes: >-
+  Gameyfin 2.4.0 adds usability improvements and major optimizations, including lower memory usage, faster startup, better image caching, scan controls, scan ETA display, and additional bug and security fixes.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
